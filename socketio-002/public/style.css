@@ -1,0 +1,47 @@
+body, article, section, div, p{
+	margin: 0px;
+	padding:0px;
+}
+
+#proton, #neutron, #electron, #electricCharge, #fusionForce, .proton, .neutron, .electron, .electricCharge, .fusionForce{
+	position: absolute;
+}
+
+#proton, #neutron, #electron, #electricCharge, #fusionForce{
+	z-index: 2000;
+}
+
+.proton, #proton{
+	background: turquoise; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.neutron, #neutron{
+	background: coral; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.electron, #electron{
+	background: #00a3ff; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%;
+}
+
+.electricCharge, #electricCharge{
+	border: dotted red 3px;
+	width: 50px; 
+	height: 50px; 
+	border-radius: 50%;
+}
+
+.fusionForce, #fusionForce{
+	border: solid 4px rgba(255,86,0,1);
+	width: 60px; 
+	height: 60px; 
+	border-radius: 50%;
+}

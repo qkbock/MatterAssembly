@@ -1,0 +1,85 @@
+<html style="padding: 0; margin: 0;">
+	<head>
+		<link type="stylesheet" rel="stylesheet" href="style.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script>
+			var socket = io.connect('http://localhost:8080');
+			
+			socket.on('other took item', function(data){
+				var takenItemButton = "#"+data.item+"Button";
+				$(takenItemButton).hide();
+			});
+			
+			socket.on('other moved', function(data){
+				document.getElementById(data.agent).style.left = data.x-20+'px';
+				document.getElementById(data.agent).style.top = data.y-20+'px';
+			});	
+			
+			socket.on('mouse clicked', function(data){
+				var left = data.x-20;
+				var top = data.y-20;
+				var newItem = $("<article class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'></article>");
+				$(newItem).appendTo("#screen");
+				console.log("clicked");
+			});	
+
+		</script>
+		
+		<script>
+			$(document).ready(function(){	
+				var screen = $('#main');	
+				var myAgent = "noOne";
+				var itemSelected = false;
+				
+				screen.mousemove(function(e){
+					var data = {};
+						data.x = e.pageX;
+						data.y = e.pageY;
+						data.agent = myAgent;
+					socket.emit('mouse moved', data);
+					
+					document.getElementById(myAgent).style.left = data.x-20+'px';
+					document.getElementById(myAgent).style.top = data.y-20+'px';			
+				});	
+				
+				screen.mouseup(function(e){
+					if(itemSelected){
+						var data = {};
+							data.x = e.pageX;
+							data.y = e.pageY;
+							data.agent = myAgent;
+						socket.emit('mouse clicked', data);
+						console.log("clicked");
+					}
+				});	
+				
+				$('.agentSelector').click(function(){
+					myAgent = $(this).val();
+					var data = {};
+						data.item = myAgent;
+					socket.emit('item taken', data);
+					$('.agentSelector').hide();
+					itemSelected = true;
+				});
+			});			
+		</script>
+	
+	</head>
+	<body id="main" style="padding: 0; margin: 0;">
+		<div id="screen">
+			<button id="protonButton" class="agentSelector" value="proton">Proton</button>
+			<button id="neutronButton" class="agentSelector" value="neutron">Neutron</button>
+			<button id="electronButton" class="agentSelector" value="electron">Electron</button>
+			<button id="electricChargeButton" class="agentSelector" value="electricCharge">Electric Charge</button>
+			<button id="fusionForceButton" class="agentSelector" value="fusionForce">Fusion Force</button>
+			
+			<section id="noOne"></section>
+			<section id="proton"></section>
+			<section id="neutron"></section>
+			<section id="electron"></section>
+			<section id="electricCharge"></section>
+			<section id="fusionForce"></section>
+		</div>
+	</body>
+</html>

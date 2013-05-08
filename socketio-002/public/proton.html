@@ -1,0 +1,19 @@
+<html style="padding: none; margin: none;">
+	<head>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket = io.connect('http://localhost:8080');
+						
+			socket.on('box', function(data){
+				document.getElementById('proton').style.left = data.x+'px';
+				document.getElementById('proton').style.top = data.y+'px';
+			});														
+		</script>
+		
+		<script>
+		</script>
+	</head>
+	<body style="padding: none; margin: none;">
+		<section id="proton" style="position: absolute; background: turquoise; width: 10px; height: 10px; border-radius: 50%;"></section>
+	</body>
+</html>
