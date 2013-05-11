@@ -4,7 +4,7 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script src="jquery-1.9.1.min.js"></script>
 		<script>
-			var socket = io.connect('http://localhost:8080');
+			var socket = io.connect('http://192.168.0.11:8080');
 			
 			socket.on('other took item', function(data){
 				var takenItemButton = "#"+data.item+"Button";
@@ -19,7 +19,7 @@
 			socket.on('mouse clicked', function(data){
 				var left = data.x-20;
 				var top = data.y-20;
-				var newItem = $("<article class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'></article>");
+				var newItem = $("<article class='plantedItem' class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'><img src='images/"+data.agent+".png' /></article>");
 				$(newItem).appendTo("#screen");
 				console.log("clicked");
 			});	
@@ -31,11 +31,16 @@
 				var screen = $('#main');	
 				var myAgent = "noOne";
 				var itemSelected = false;
+				var mouseX;
+				var mouseY;
 				
 				screen.mousemove(function(e){
+					mouseX = e.pageX;
+					mouseY = e.pageY;
+					
 					var data = {};
-						data.x = e.pageX;
-						data.y = e.pageY;
+						data.x = mouseX;
+						data.y = mouseY;
 						data.agent = myAgent;
 					socket.emit('mouse moved', data);
 					
@@ -62,7 +67,11 @@
 					$('.agentSelector').hide();
 					itemSelected = true;
 				});
-			});			
+				
+/* 				$('#screen section') */
+			});
+			
+							
 		</script>
 	
 	</head>
