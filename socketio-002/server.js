@@ -9,10 +9,11 @@ server.listen(port);
 app.use(express.static(__dirname+'/public'));
 
 io.sockets.on('connection', function(socket){
-	
-	socket.on('item taken', function(data){
-		io.sockets.emit('other took item', data);
+	socket.on('item selected', function(data){
+		io.sockets.emit('other selected', data);
+		console.log(data);	
 	});
+	
 	socket.on('mouse moved', function(data){
 		io.sockets.emit('other moved', data);
 		console.log(data);	

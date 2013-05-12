@@ -5,21 +5,21 @@
 		<script src="jquery-1.9.1.min.js"></script>
 		<script>
 			var socket = io.connect('http://192.168.0.11:8080');
-			
-			socket.on('other took item', function(data){
-				var takenItemButton = "#"+data.item+"Button";
-				$(takenItemButton).hide();
-			});
+
+			socket.on('other selected', function(data){
+				var newItem = $("<section id='"+data.uniqueID+"' class='"+data.agent+"'><img src='images/"+data.agent+".png' /></section>");
+				$(newItem).appendTo("#screen");
+			});				
 			
 			socket.on('other moved', function(data){
-				document.getElementById(data.agent).style.left = data.x-20+'px';
-				document.getElementById(data.agent).style.top = data.y-20+'px';
+				document.getElementById(data.uniqueID).style.left = data.x-15+'px';
+				document.getElementById(data.uniqueID).style.top = data.y-15+'px';
 			});	
 			
 			socket.on('mouse clicked', function(data){
 				var left = data.x-20;
 				var top = data.y-20;
-				var newItem = $("<article class='plantedItem' class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'><img src='images/"+data.agent+".png' /></article>");
+				var newItem = $("<article class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'><img src='images/"+data.agent+".png' /></article>");
 				$(newItem).appendTo("#screen");
 				console.log("clicked");
 			});	
@@ -29,27 +29,26 @@
 		<script>
 			$(document).ready(function(){	
 				var screen = $('#main');	
-				var myAgent = "noOne";
-				var itemSelected = false;
 				var mouseX;
 				var mouseY;
+				var collectionHeight = 60;
+				var myAgent = "noOne";
+				var itemSelected = false;
+				
 				
 				screen.mousemove(function(e){
 					mouseX = e.pageX;
 					mouseY = e.pageY;
-					
 					var data = {};
 						data.x = mouseX;
 						data.y = mouseY;
 						data.agent = myAgent;
-					socket.emit('mouse moved', data);
-					
-					document.getElementById(myAgent).style.left = data.x-20+'px';
-					document.getElementById(myAgent).style.top = data.y-20+'px';			
+						data.uniqueID = myUniqueID;
+					socket.emit('mouse moved', data);	
 				});	
 				
 				screen.mouseup(function(e){
-					if(itemSelected){
+					if(itemSelected && mouseY > collectionHeight){
 						var data = {};
 							data.x = e.pageX;
 							data.y = e.pageY;
@@ -61,14 +60,14 @@
 				
 				$('.agentSelector').click(function(){
 					myAgent = $(this).val();
+					myUniqueID = String(new Date().getTime());
 					var data = {};
-						data.item = myAgent;
-					socket.emit('item taken', data);
-					$('.agentSelector').hide();
+						data.agent = myAgent;
+						data.uniqueID = myUniqueID;
+					socket.emit('item selected', data);
 					itemSelected = true;
 				});
 				
-/* 				$('#screen section') */
 			});
 			
 							
@@ -83,12 +82,14 @@
 			<button id="electricChargeButton" class="agentSelector" value="electricCharge">Electric Charge</button>
 			<button id="fusionForceButton" class="agentSelector" value="fusionForce">Fusion Force</button>
 			
-			<section id="noOne"></section>
-			<section id="proton"></section>
+			<section id="mouseImage"><img src="" /></section>
+			<!--
+<section id="proton"></section>
 			<section id="neutron"></section>
 			<section id="electron"></section>
 			<section id="electricCharge"></section>
 			<section id="fusionForce"></section>
+-->
 		</div>
 	</body>
 </html>

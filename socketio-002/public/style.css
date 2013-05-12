@@ -3,15 +3,43 @@ body, article, section, div, p{
 	padding:0px;
 }
 
+
+button{
+	z-index: 2000;
+
+}
+
+#mouseImage{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+#mouseImage img{
+	width: 100%;
+}
+
+section{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+section img{
+	width: 100%;
+}
+
 #proton, #neutron, #electron, #electricCharge, #fusionForce, .proton, .neutron, .electron, .electricCharge, .fusionForce{
 	position: absolute;
 }
+
+/*
+
 
 #proton, #neutron, #electron, #electricCharge, #fusionForce{
 	z-index: 2000;
 }
 
-/*
 .proton, #proton{
 	background: turquoise; 
 	width: 40px; 
