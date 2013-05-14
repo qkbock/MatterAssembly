@@ -201,6 +201,72 @@ h3{
 	width: 20px;
 }
 
+.info{
+	position:absolute;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	top:0;
+	font-size: .8em;
+	width: 30%;
+	color: white;
+	background-color: #2D2D2D;
+	border-radius: 5px;
+	padding: 7px 5px 7px 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+.hotSpotInfo{
+	position:absolute;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	top:0;
+	font-size: .8em;
+	width: 30%;
+	color: #2D2D2D;
+	background-color: white;
+	border: solid 2px #E8035B;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+.hotSpotInfo img{
+	width: 100%;
+}
+
+.hotSpotInfo p{
+	margin-bottom: 7px;
+}
+
+#baseballInfo{
+	top: 13%;
+	left: 1%;
+}
+
+#stadiumInfo{
+	top: 46%;
+	left: 57%;
+}
+
+#electricChargeInfo{
+	top: 368px;
+	left: 30%;
+}
+
+#fusionForceInfo{
+	top: 264px;
+	left: 13%;
+}
+#neutronInfo{
+	top: 184px;
+	left: 57%;
+}
+#protonInfo{
+	top: 288px;
+	left: 55%;
+}
+#electronInfo{
+	top: 258px;
+	left: 64%;
+}
 
 #blocker{
 	width: 88%;
@@ -260,7 +326,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5e6', end
 
 }
 
+/*
+map area{
+	cursor: pointer; 
+	cursor: hand;
+}
 
+#electricChargeWord{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+#electricChargeWord:hover{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+area{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+area:hover{
+	cursor: pointer; 
+	cursor: hand;
+}
+*/
 
 
 
@@ -327,3 +418,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5e6', end
 	border-radius: 50%;
 }
 */
+

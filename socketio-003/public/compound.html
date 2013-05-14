@@ -2,6 +2,11 @@
 	<head>
 		<link type="stylesheet" rel="stylesheet" href="style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
 		<script src="/socket.io/socket.io.js"></script>
 		<script src="jquery-1.9.1.min.js"></script>
 		<script src="jquery-ui.1.10.3.min.js"></script>
@@ -20,7 +25,7 @@
 				var numOfArticles;
 				var maxNumOfArticles = 10;
 				
-				$('#protiumButton').hide();  $('#deuteriumButton').hide();  $('#helium0Button').hide(); $('#subatomicLevelInfo').hide(); $('#blocker').hide(); 	
+				$('#protiumButton').hide();  $('#deuteriumButton').hide();  $('#helium0Button').hide(); $('#subatomicLevelInfo').hide(); $('#blocker').hide(); $('#electricChargeInfo').hide(); $('#fusionForceInfo').hide(); $('#neutronInfo').hide(); $('#protonInfo').hide(); $('#electronInfo').hide(); $('#baseballInfo').hide(); $('#stadiumInfo').hide(); 
 				
 				socket.on('other selected', function(data){
 					var newItem = $("<section id='"+data.uniqueID+"' class='"+data.agent+"'><img src='images/"+data.agent+".png' /></section>");
@@ -242,12 +247,48 @@
 				});
 				
 				function fadeHotSpots(){
-					$('.hotSpot').fadeTo(500, .4);
-					$('.hotSpot').fadeTo(500, 1);
+					$('.hotSpot').fadeTo(1000, .4);
+					$('.hotSpot').fadeTo(1000, 1);
 				}
 				
-				setInterval(fadeHotSpots, 1500);
+/* 				setInterval(fadeHotSpots, 2500); */
+				
+				$("#electricChargeWord").click(function(event){
+					event.preventDefault();
+					$("#electricChargeInfo").toggle("clip");
+				});
+				$("#fusionForceWord").click(function(event){
+					event.preventDefault();
+					$("#fusionForceInfo").toggle("clip");
+				});
+				$("#neutronWord").click(function(event){
+					event.preventDefault();
+					$("#neutronInfo").toggle("clip");
+				});
+				$("#protonWord").click(function(event){
+					event.preventDefault();
+					$("#protonInfo").toggle("clip");
+				});
+				$("#electronWord").click(function(event){
+					event.preventDefault();
+					$("#electronInfo").toggle("clip");
+				});
+				
+				$("#hotSpot2").click(function(){
+					$("#baseballInfo").toggle("clip");
+				});
+				
+				$("#hotSpot1").click(function(){
+					$("#stadiumInfo").toggle("clip");
+				});
+				
+				$("area").mouseout(function(event){
+					$(".info").hide("clip");
+				});
+				
+				
 							
+				
 			});
 			
 				
@@ -286,14 +327,24 @@
 		</div>
 		<div id="subatomicLevelInfo">
 			<div id="levelTitleHolder"><center><h3>Subatomic</h3></center></div>
-			<center><img style="margin-top:0px; width: 550px;" src="images/subatomicLevelInfo.png" usemap="#termsMap"/></center>
+			<center><img width="550" height="506" style="width:550px" src="images/subatomicLevelInfo.png" usemap="#termsMap"/></center>
 			<map name="termsMap">
-			  <area shape="rect" coords="0,0,82,126">
-			  <area shape="circle" coords="90,58,3">
-			  <area shape="circle" coords="124,58,8">
+			  <area id="electricChargeWord" href="#" shape="rect" coords="100,300,175,325">
+			  <area id="fusionForceWord" href="#" shape="rect" coords="170,190,235,220">
+			  <area id="neutronWord" href="#" shape="rect" coords="280,175,325,195">
+			  <area id="protonWord" href="#" shape="rect" coords="325,220,360,240">
+			  <area id="electronWord" href="#" shape="rect" coords="510,170,550,215">
 			</map>
 			<img id="hotSpot1" class="hotSpot" src="images/hotSpot.png" />
 			<img id="hotSpot2" class="hotSpot" src="images/hotSpot.png" />
+			<div id="electricChargeInfo" class="info"><p>Electric Charge is one of the forces that holds everything together.  Electric charge allows particles to exert a force on other electrically charged matter.  The two types of electric charge are positive and negative.  Like charges attract and unlike charges repel.</p></div>
+			<div id="fusionForceInfo" class="info"><p>The "Strong" Force holds the parts of an atoms nucleus, protons and neutrons, together.  The protons inside the nucleus are constantly trying to push away from each other so it takes a lot of energy to make them stick.  This energy comes from the power of a fusion reaction in which two particles hit each other at extremely high speeds and fuses together.  This fusion force occurs in the center of stars and has been replicated by people.</p></div>
+			<div id="neutronInfo" class="info"><p>A Neutron is a subatomic particle with no electric charge.  It is slightly larger than a proton and is required to hold protons together in the atom.  Atoms of the same type can have different numbers of neutrons - these variations are called isotopes.</p></div>
+			<div id="protonInfo" class="info"><p>A Proton is a positively charged subatomic particle.  At least one proton is present in the nucleus of each atom. The number of protons in an atom determines how it will interact with the world and what element that atom will be.</p></div>
+			<div id="electronInfo" class="info"><p>A Electron is a negatively charged subatomic particle.  Electrons are 1/1836 the size of Protons.  They can be either a particle (stuff) or a wave (energy).  Electrons help bind atoms together by orbiting the nucleus of an atom in a cloud and interacting with other atoms.</p></div>
+			<div id="baseballInfo" class="hotSpotInfo"><p>Atoms are made up of mostly empty space.</p><p>If there were no space in or between atoms, everyone who has ever lived would fit inside a baseball.</p><p>What would life be like if the spaces in and between atoms were smaller?</p><center><img style="width: 60%;" src="images/baseball.png" /></center></div>
+			<div id="stadiumInfo" class="hotSpotInfo"><p>The protons/neutrons and electrons in an atom are actually extremely far apart.</p><p>To compare the sizes and distances: Imagine that a proton was a fly in the middle of a football stadium, the electron would be a gnat flying around the outside of the stadium.</p><center><img style="width:80%;" src="images/stadium.png" /></center></div>
+
 		</div>
 	</body>
 </html>
