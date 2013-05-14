@@ -1,0 +1,270 @@
+<html style="padding: 0; margin: 0;">
+	<head>
+		<link type="stylesheet" rel="stylesheet" href="style.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="jquery-1.9.1.min.js"></script>
+		<script>
+			
+				
+			
+
+		</script>
+		
+		<script>
+			var socket = io.connect('http://192.168.0.11:8080');
+			$(document).ready(function(){	
+				var screen = $('#screen');	
+				var mouseX;
+				var mouseY;
+				var myAgent = "noOne";
+				var myUniqueID = "";
+				var lastPlantedUniqueID = "";
+				var itemSelected = false;
+				var clickingOn = false;
+				var numOfArticles;
+				var maxNumOfArticles = 10;
+				
+				$('#protiumButton').hide();  $('#deuteriumButton').hide();  $('#helium0Button').hide();  		
+				
+				socket.on('other selected', function(data){
+					var newItem = $("<section id='"+data.uniqueID+"' class='"+data.agent+"'><img src='images/"+data.agent+".png' /></section>");
+					$(newItem).appendTo("#screen");
+				});				
+				
+				socket.on('other moved', function(data){
+					document.getElementById(data.uniqueID).style.left = data.x-15+'px';
+					document.getElementById(data.uniqueID).style.top = data.y-15+'px';
+				});	
+				
+				socket.on('mouse clicked', function(data){
+					var left = data.x-15;
+					var top = data.y-15;
+					var newItem = $("<article id='"+data.uniqueID+"' class='"+data.agent+"' style='left:"+left+"px; top:"+top+"px;'><img src='images/"+data.agent+".png' /></article>");
+					$(newItem).appendTo("#screen");
+					console.log("clicked");
+					numOfArticles = $("#screen").children("article").length;
+					if(numOfArticles > maxNumOfArticles){
+						var thisID = $('article').eq(0).attr("id");
+						removeElement(thisID);
+					}
+				});	
+				
+				socket.on('add element', function(data){
+					var newItem = $("<article id='"+data.uniqueID+"' class='"+data.type+"' style='left:"+data.x+"px; top:"+data.y+"px;'><img src='images/"+data.type+".png' /></article>");
+					$(newItem).appendTo("#screen");
+					
+					numOfArticles = $("#screen").children("article").length;
+					if(numOfArticles > maxNumOfArticles){
+						var thisID = $('article').eq(0).attr("id");
+						removeElement(thisID);
+					}
+				});	
+				
+				socket.on('remove agent', function(data){
+					document.getElementById(data.uniqueID).remove();
+				});
+				
+				
+/* 				------------------------- */
+
+				screen.mousemove(function(e){
+					mouseX = e.pageX;
+					mouseY = e.pageY;
+					if(itemSelected){
+						var data = {};
+							data.x = mouseX;
+							data.y = mouseY;
+							data.agent = myAgent;
+							data.uniqueID = myUniqueID;
+						socket.emit('mouse moved', data);	
+					}
+				});	
+				
+				screen.mouseup(function(e){
+					if(!clickingOn){
+						if(itemSelected){
+							var lastPlantedUniqueID = String(new Date().getTime());
+							var data = {};
+								data.x = e.pageX;
+								data.y = e.pageY;
+								data.agent = myAgent;
+								data.uniqueID = lastPlantedUniqueID;
+							socket.emit('mouse clicked', data);
+						}
+					}
+				});	
+				
+				$('.agentSelector').click(function(){
+					//remove previous image
+					if(itemSelected){
+						removeElement(myUniqueID);
+					}
+					
+					//change values for this client
+					myAgent = $(this).val();
+					itemSelected = true;
+					screen.css( "cursor", "url('images/cursors/"+myAgent+".png'), move" );
+					//add new image
+					myUniqueID = String(new Date().getTime());
+					var data = {};
+						data.agent = myAgent;
+						data.uniqueID = myUniqueID;
+					socket.emit('item selected', data);
+
+				});
+							
+				$(document).on("mouseenter", "article", function(){ 
+					clickingOn = true;
+					$(this).fadeTo(500, .6);
+					$(this).fadeTo(500, 1);
+					console.log("hover");
+				});
+				
+				$(document).on("mouseout", "article", function(){ 
+					clickingOn = false;
+				});
+				
+				function removeElement(uniqueIDtoBeRemoved){
+					var data = {};
+						data.uniqueID = uniqueIDtoBeRemoved;
+					socket.emit('remove agent', data);
+				}		
+				
+				function replaceElement(element, typeToBeAdded){
+					var xloc = $(element).position().left;
+					var yloc = $(element).position().top;
+					lastPlantedUniqueID = String(new Date().getTime());
+					var data = {};
+						data.x = xloc;
+						data.y = yloc;
+						data.type = typeToBeAdded;
+						data.uniqueID = lastPlantedUniqueID;
+					socket.emit('add element', data);
+				}	
+				
+				
+/* -------------------------------------------------ALL THE CLICKING COMBOS-------------------------------------------------*/
+				$(document).on("click", "article.proton", function(){ 
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricChargeProton")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReadyProton")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+				});
+				
+				$(document).on("click", "article.neutron", function(){ 
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReadyNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+				});
+				
+				$(document).on("click", "article.electron", function(){ 
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricChargeElectron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+				});
+				
+				$(document).on("click", "article.electricCharge", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "electricChargeProton")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+					if(myAgent=="electron"){ 
+						replaceElement(this, "electricChargeElectron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+				});
+				
+				$(document).on("click", "article.fusionForce", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "fusionReadyProton")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+					if(myAgent=="neutron"){ 
+						replaceElement(this, "fusionReadyNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+					}
+				});
+				
+				$(document).on("click", "article.electricChargeProton", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "protium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#protiumButton').show(); 	
+					}
+				});
+				
+				$(document).on("click", "article.electricChargeElectron", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "protium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+						$('#protiumButton').show(); 
+					}
+				});
+				
+				$(document).on("click", "article.fusionReadyProton", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "helium0")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#helium0Button').show(); 	
+					}
+					if(myAgent=="neutron"){ 
+						replaceElement(this, "deuterium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	
+						$('#deuteriumButton').show(); 
+					}
+				});
+				
+				$(document).on("click", "article.fusionReadyNeutron", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "deuterium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#deuteriumButton').show(); 	
+					}
+				});
+				
+							
+			});
+			
+				
+		</script>
+	
+	</head>
+	<body id="main" style="padding: 0; margin: 0;">
+		
+		
+		<div id="screen">
+			<section id="mouseImage"><img src="" /></section>
+		</div>
+		<div id="collection">
+			<button id="protonButton" class="agentSelector" value="proton">Proton</button>
+			<button id="neutronButton" class="agentSelector" value="neutron">Neutron</button>
+			<button id="electronButton" class="agentSelector" value="electron">Electron</button>
+			<button id="electricChargeButton" class="agentSelector" value="electricCharge">Electric Charge</button>
+			<button id="fusionForceButton" class="agentSelector" value="fusionForce">Fusion Force</button>
+			<button id="protiumButton" class="agentSelector" value="protium">Protium</button>
+			<button id="deuteriumButton" class="agentSelector" value="deuterium">Deuterium</button>
+			<button id="helium0Button" class="agentSelector" value="helium0">Helium-0</button>
+		</div>
+		<div id="level">
+		</div>
+	</body>
+</html>

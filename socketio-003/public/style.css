@@ -1,0 +1,126 @@
+body, article, section, div, p{
+	margin: 0px;
+	padding:0px;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+button{
+	z-index: 2000;
+
+}
+
+section{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+section img{
+	width: 100%;
+}
+
+article{
+	position: absolute;
+}
+
+#screen{
+	width: 100%;
+	height: 100%;
+}
+
+#level{
+	width: 10%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.71);
+	top: 0;
+	left: 0;
+	position: absolute;	
+}
+
+
+#collection{
+    width:90%;
+    height:40px;
+    bottom:0;
+	left:10%;
+	background-color: rgba(68,150,250,0.62);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position:absolute;	
+
+}
+
+#collection button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/*
+#proton, #neutron, #electron, #electricCharge, #fusionForce, .proton, .neutron, .electron, .electricCharge, .fusionForce{
+	position: absolute;
+}
+*/
+
+
+/*
+#mouseImage{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+#mouseImage img{
+	width: 100%;
+}
+*/
+
+
+/*
+
+
+#proton, #neutron, #electron, #electricCharge, #fusionForce{
+	z-index: 2000;
+}
+
+.proton, #proton{
+	background: turquoise; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.neutron, #neutron{
+	background: coral; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.electron, #electron{
+	background: #00a3ff; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%;
+}
+
+.electricCharge, #electricCharge{
+	border: dotted red 3px;
+	width: 50px; 
+	height: 50px; 
+	border-radius: 50%;
+}
+
+.fusionForce, #fusionForce{
+	border: solid 4px rgba(255,86,0,1);
+	width: 60px; 
+	height: 60px; 
+	border-radius: 50%;
+}
+*/
