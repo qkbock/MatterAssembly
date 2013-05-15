@@ -1,7 +1,7 @@
 <html style="padding: 0; margin: 0;">
 	<head>
 		<link type="stylesheet" rel="stylesheet" href="style.css" />
-		<link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+<!-- 		<link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'> -->
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -25,7 +25,7 @@
 				var numOfArticles;
 				var maxNumOfArticles = 10;
 				
-				$('#protiumButton').hide();  $('#deuteriumButton').hide();  $('#helium0Button').hide(); $('#subatomicLevelInfo').hide(); $('#blocker').hide(); $('#electricChargeInfo').hide(); $('#fusionForceInfo').hide(); $('#neutronInfo').hide(); $('#protonInfo').hide(); $('#electronInfo').hide(); $('#baseballInfo').hide(); $('#stadiumInfo').hide(); 
+				$('#protiumButton').hide();  $('#deuteriumButton').hide(); $('#tritiumButton').hide(); $('#helium3Button').hide(); $('#helium4Button').hide(); $('#subatomicLevelInfo').hide(); $('#blocker').hide(); $('#electricChargeInfo').hide(); $('#fusionForceInfo').hide(); $('#neutronInfo').hide(); $('#protonInfo').hide(); $('#electronInfo').hide(); $('#baseballInfo').hide(); $('#stadiumInfo').hide(); 
 				
 				socket.on('other selected', function(data){
 					var newItem = $("<section id='"+data.uniqueID+"' class='"+data.agent+"'><img src='images/"+data.agent+".png' /></section>");
@@ -143,6 +143,53 @@
 					socket.emit('add element', data);
 				}	
 				
+				$('#subatomicLevelButton').click(function(){
+					$('#subatomicLevelInfo').animate({width: 'toggle'});
+				});
+				
+				function fadeHotSpots(){
+					$('.hotSpot').fadeTo(1000, .4);
+					$('.hotSpot').fadeTo(1000, 1);
+				}
+				
+				setInterval(fadeHotSpots, 2500);
+				
+				$("#electricChargeWord").click(function(event){
+					event.preventDefault();
+					$("#electricChargeInfo").toggle("clip");
+				});
+				$("#fusionForceWord").click(function(event){
+					event.preventDefault();
+					$("#fusionForceInfo").toggle("clip");
+				});
+				$("#neutronWord").click(function(event){
+					event.preventDefault();
+					$("#neutronInfo").toggle("clip");
+				});
+				$("#protonWord").click(function(event){
+					event.preventDefault();
+					$("#protonInfo").toggle("clip");
+				});
+				$("#electronWord").click(function(event){
+					event.preventDefault();
+					$("#electronInfo").toggle("clip");
+				});
+				
+				$("#hotSpot2").click(function(){
+					$("#baseballInfo").toggle("clip");
+				});
+				
+				$("#hotSpot1").click(function(){
+					$("#stadiumInfo").toggle("clip");
+				});
+				
+				$(".hotSpot").mouseout(function(event){
+					$(".hotSpotInfo").hide("clip");
+				});
+				
+				$("area").mouseout(function(event){
+					$(".info").hide("clip");
+				});
 				
 /* -------------------------------------------------ALL THE CLICKING COMBOS-------------------------------------------------*/
 				$(document).on("click", "article.proton", function(){ 
@@ -219,76 +266,155 @@
 				});
 				
 				$(document).on("click", "article.fusionReadyProton", function(){ 
-					if(myAgent=="proton"){ 
-						replaceElement(this, "helium0")
-						var thisID = $(this).attr("id");
-						removeElement(thisID);
-						$('#helium0Button').show("highlight", {color:"#E8035B"}, 1000); 	
-					}
 					if(myAgent=="neutron"){ 
-						replaceElement(this, "deuterium")
+						replaceElement(this, "protonNeutron")
 						var thisID = $(this).attr("id");
 						removeElement(thisID);	
-						$('#deuteriumButton').show("highlight", {color:"#E8035B"}, 1000);
 					}
 				});
 				
 				$(document).on("click", "article.fusionReadyNeutron", function(){ 
 					if(myAgent=="proton"){ 
-						replaceElement(this, "deuterium")
+						replaceElement(this, "protonNeutron")
 						var thisID = $(this).attr("id");
-						removeElement(thisID);
-						$('#deuteriumButton').show("highlight", {color:"#E8035B"}, 1000); 	
+						removeElement(thisID);	 	
 					}
 				});
 				
-				$('#subatomicLevelButton').click(function(){
-					$('#subatomicLevelInfo').animate({width: 'toggle'});
+				$(document).on("click", "article.protonNeutron", function(){ 
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReadyProtonNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricChargeProtonNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
 				});
 				
-				function fadeHotSpots(){
-					$('.hotSpot').fadeTo(1000, .4);
-					$('.hotSpot').fadeTo(1000, 1);
-				}
-				
-/* 				setInterval(fadeHotSpots, 2500); */
-				
-				$("#electricChargeWord").click(function(event){
-					event.preventDefault();
-					$("#electricChargeInfo").toggle("clip");
-				});
-				$("#fusionForceWord").click(function(event){
-					event.preventDefault();
-					$("#fusionForceInfo").toggle("clip");
-				});
-				$("#neutronWord").click(function(event){
-					event.preventDefault();
-					$("#neutronInfo").toggle("clip");
-				});
-				$("#protonWord").click(function(event){
-					event.preventDefault();
-					$("#protonInfo").toggle("clip");
-				});
-				$("#electronWord").click(function(event){
-					event.preventDefault();
-					$("#electronInfo").toggle("clip");
+				$(document).on("click", "article.electricChargeProtonNeutron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "deuterium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#deuteriumButton').show("highlight", {color:"#E8035B"}, 1000);	 	
+					}
 				});
 				
-				$("#hotSpot2").click(function(){
-					$("#baseballInfo").toggle("clip");
+				$(document).on("click", "article.fusionReadyProtonNeutron", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "2protonNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+					if(myAgent=="neutron"){ 
+						replaceElement(this, "proton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
 				});
 				
-				$("#hotSpot1").click(function(){
-					$("#stadiumInfo").toggle("clip");
+				$(document).on("click", "article.2protonNeutron", function(){ 
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricCharge2protonNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReady2protonNeutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
 				});
 				
-				$("area").mouseout(function(event){
-					$(".info").hide("clip");
+				$(document).on("click", "article.proton2Neutron", function(){ 
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricChargeProton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReadyProton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
 				});
 				
+				$(document).on("click", "article.electricChargeProton2Neutron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "tritium")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#tritiumButton').show("highlight", {color:"#E8035B"}, 1000);	 	
+					}
+				});
 				
+				$(document).on("click", "article.electricCharge2protonNeutron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "2protonNeutronElectron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+					}
+				});	
+				
+				$(document).on("click", "article.2protonNeutronElectron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "helium3")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#helium3Button').show("highlight", {color:"#E8035B"}, 1000);	 
+					}
+				});	
+				
+				$(document).on("click", "article.fusionReadyProton2Neutron", function(){ 
+					if(myAgent=="proton"){ 
+						replaceElement(this, "2proton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+				});
+				
+				$(document).on("click", "article.fusionReady2protonNeutron", function(){ 
+					if(myAgent=="neutron"){ 
+						replaceElement(this, "2proton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+				});
+				
+				$(document).on("click", "article.2proton2Neutron", function(){ 
+					if(myAgent=="electricCharge"){ 
+						replaceElement(this, "electricCharge2proton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+					if(myAgent=="fusionForce"){ 
+						replaceElement(this, "fusionReady2proton2Neutron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+				});
+				
+				$(document).on("click", "article.electricCharge2proton2Neutron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "2proton2NeutronElectron")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);	 	
+					}
+				});
+				
+				$(document).on("click", "article.2proton2NeutronElectron", function(){ 
+					if(myAgent=="electron"){ 
+						replaceElement(this, "helium4")
+						var thisID = $(this).attr("id");
+						removeElement(thisID);
+						$('#helium4Button').show("highlight", {color:"#E8035B"}, 1000);	 
+	 	
+					}
+				});
 							
-				
 			});
 			
 				
@@ -307,9 +433,13 @@
 			<button id="electronButton" class="agentSelector subatomic" value="electron">Electron</button>
 			<button id="electricChargeButton" class="agentSelector subatomic" value="electricCharge">Electric Charge</button>
 			<button id="fusionForceButton" class="agentSelector subatomic" value="fusionForce">Fusion Force</button>
-			<button id="deuteriumButton" class="agentSelector subatomic" value="deuterium">Deuterium</button>
-			<button id="helium0Button" class="agentSelector subatomic" value="helium0">Helium-0</button>
+			
 			<button id="protiumButton" class="agentSelector atomic" value="protium">Protium</button>
+			<button id="deuteriumButton" class="agentSelector atomic" value="deuterium">Deuterium</button>
+			<button id="tritiumButton" class="agentSelector atomic" value="tritium">Tritium</button>
+			<button id="helium3Button" class="agentSelector atomic" value="helium3">Helium-3</button>
+			<button id="helium4Button" class="agentSelector atomic" value="helium4">Helium-4</button>
+
 		</div>
 		<div id="level">
 <!-- 			<div id="levelHilighter"></div> -->

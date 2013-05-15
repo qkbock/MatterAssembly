@@ -3,6 +3,16 @@ font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Abel', sans-serif;
 */
 
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf");
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url("fonts/Abel/Abel-Regular.ttf");
+}
+  
 body, article, section, div, p{
 	margin: 0px;
 	padding:0px;
@@ -162,7 +172,7 @@ h3{
 	font-size: .9em;
 	padding: 25px;
 	border: #DBDBDB solid 1px;
-	width: 160px;
+	width: 170px;
 }
 
 #link:hover{
@@ -187,18 +197,21 @@ h3{
 	overflow: hidden;
 }
 
-#hotSpot1{
+.hotSpot{
 	position: absolute;
+	width: 20px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#hotSpot1{
 	top: 42%;
-	left: 71%;
-	width: 20px;	
+	left: 71%;	
 }
 
 #hotSpot2{
-	position: absolute;
 	top: 70%;
-	left: 15%;
-	width: 20px;
+	left: 20%;
 }
 
 .info{
