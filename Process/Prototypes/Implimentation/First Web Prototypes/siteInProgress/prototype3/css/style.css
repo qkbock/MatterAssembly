@@ -1,0 +1,212 @@
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Raleway', sans-serif;
+  zoom: reset;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  line-height: 1;
+  min-height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body{
+	overflow: auto;
+	height: 100000px;
+}
+
+#skrollr-body{
+	width:100%;
+	height:100%;
+	position: fixed;
+}
+
+#skrollr-body div{
+	overflow: hidden;
+	position: absolute;
+}
+
+.centered{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+div#title{
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+div#title p{
+	font-size: 40px;
+	margin-top: 150px;
+	z-index: 3;
+}
+
+div#instructions{
+	width: 60%;
+	height: 100%;
+	z-index: 3;
+}
+
+div#instructions p{
+	font-size: 20px;
+	z-index: 3;
+}
+
+#arrow{
+	width: 5%;
+	left:0;
+	right:0;
+	margin: auto;
+	bottom: 3%;
+}
+
+#arrow img{
+	width: 100%;	
+}
+
+#proton{
+	width:150px;
+	top: 300px;
+	border-radius:100px;
+	margin: 2px;
+	box-shadow: -2px 2px 11px rgba(0,0,0,0.5);
+	z-index: 3;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+#proton img{
+	width:104%;
+	margin: -2%;
+}
+
+#rings{
+	width: 520px;
+	top: 155px;	
+	z-index: 2;
+}
+
+#rings img{
+	width:100%;
+}
+
+#homepageBackground{
+	z-index: 0;
+	background: url("../images/homepage.png"); 
+}
+
+#collection{
+	background-color: rgba(255,255,255,0.6);;
+	width: 7%;
+	height: 90%;
+	top:0;
+	bottom:0;
+	margin: auto;
+	right: 0;
+	z-index: 100;
+}
+
+#scale{
+	background-color: rgba(255,255,255,0.6);
+/* 	width: 7%; */
+	height: 90%;
+	left: 0;
+	top:0;
+	bottom:0;
+	margin: auto;
+	z-index: 100;
+}
+
+#scale img{
+	height: 100%;
+}
+
+#electron{
+	width: 10px;
+	height: 10px;
+	background: navy;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+#football{
+	width: 50%;
+	top: 42px;
+}
+
+#football img{
+	width:100%;
+}
+
+
+
+#atomBlue, #atomOrange{
+	width:150px;
+	left: 45%;
+	top: 40%;
+	border-radius: 50%;
+	box-shadow: -2px 2px 11px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+#atomBlue img, #atomOrange img{
+	width:104%;
+	margin: -2%;
+}
+
+
+/*
+#quote{
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	border: solid;
+	border-radius: 50%;
+	padding: 10%;
+	left: 35%;
+	top: 26%;
+	font-size: 25px;
+	background: black;	
+}
+
+#quote p#quote{
+	color: white;
+	margin-left: -111%;
+	margin-top: 0%;
+	width: 320%;
+}
+
+#quote span#attribution{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#keyhole{
+	width:100%;
+	z-index: 1;
+	background: url("../images/keyhole.png") center center no-repeat;
+}
+
+#home{
+	z-index: 2;
+	background: -webkit-linear-gradient(#282828 0%, #161616 100%);
+}
+*/

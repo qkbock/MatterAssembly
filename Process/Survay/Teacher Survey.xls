@@ -1,0 +1,749 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Larry Bock</LastAuthor>
+  <LastSaved>2013-04-02T14:42:32Z</LastSaved>
+  <Version>12.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>19160</WindowHeight>
+  <WindowWidth>32200</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>-20</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Verdana"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:Color="#0000D4"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="37" ss:ExpandedRowCount="17" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s21" ss:Hidden="1" ss:AutoFitWidth="0" ss:Span="12"/>
+   <Column ss:Index="28" ss:StyleID="s21" ss:Width="53.0"/>
+   <Column ss:StyleID="s21" ss:Width="48.0"/>
+   <Column ss:StyleID="s21" ss:Width="145.0"/>
+   <Column ss:StyleID="s21" ss:Width="119.0"/>
+   <Column ss:Index="36" ss:StyleID="s21" ss:Width="105.0"/>
+   <Column ss:StyleID="s21" ss:Width="97.0"/>
+   <Row ss:AutoFitHeight="0" ss:Height="84.0" ss:StyleID="s22">
+    <Cell><Data ss:Type="String">Entry Id</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What grade(s) do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">What kind of science do you teach?</Data></Cell>
+    <Cell><Data ss:Type="String">Is your class required or an elective?</Data></Cell>
+    <Cell><Data ss:Type="String">In what state do you teach? </Data></Cell>
+    <Cell><Data ss:Type="String">What topic do you find hardest to teach?</Data></Cell>
+    <Cell><Data ss:Type="String">Any ideas why?</Data></Cell>
+    <Cell><Data ss:Type="String">What topic do your students find hardest to grasp?</Data></Cell>
+    <Cell><Data ss:Type="String">Any ideas why?</Data></Cell>
+    <Cell><Data ss:Type="String">What topic are you most excited to teach?</Data></Cell>
+    <Cell><Data ss:Type="String">Any ideas why?</Data></Cell>
+    <Cell><Data ss:Type="String">What topic do your students get most excited about learning?</Data></Cell>
+    <Cell><Data ss:Type="String">Any ideas why?</Data></Cell>
+    <Cell><Data ss:Type="String">Do you have a unique or interactive way of teaching a particular topic?</Data></Cell>
+    <Cell><Data ss:Type="String">Anything else…?</Data></Cell>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">Last</Data></Cell>
+    <Cell><Data ss:Type="String">Email</Data></Cell>
+    <Cell><Data ss:Type="String">Date Created</Data></Cell>
+    <Cell><Data ss:Type="String">Created By</Data></Cell>
+    <Cell><Data ss:Type="String">Last Updated</Data></Cell>
+    <Cell><Data ss:Type="String">Updated By</Data></Cell>
+    <Cell><Data ss:Type="String">IP Address</Data></Cell>
+    <Cell><Data ss:Type="String">Last Page Accessed</Data></Cell>
+    <Cell><Data ss:Type="String">Completion Status</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="299.0">
+    <Cell><Data ss:Type="String">2</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6th</Data></Cell>
+    <Cell><Data ss:Type="String">7th</Data></Cell>
+    <Cell><Data ss:Type="String">8th</Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6, 7, 8, 9</Data></Cell>
+    <Cell><Data ss:Type="String">general </Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Missouri</Data></Cell>
+    <Cell><Data ss:Type="String">chemical equations</Data></Cell>
+    <Cell><Data ss:Type="String">They were rough for me to grasp and I have to relearn before teaching them.</Data></Cell>
+    <Cell><Data ss:Type="String">It varies</Data></Cell>
+    <Cell><Data ss:Type="String">It depends on how quickly I can scaffold the topics with each child.</Data></Cell>
+    <Cell><Data ss:Type="String">The Periodic Table of Elements</Data></Cell>
+    <Cell><Data ss:Type="String">The students glow when that light goes on in their heads when they get it and they continue to talk about it outside class.</Data></Cell>
+    <Cell><Data ss:Type="String">human development</Data></Cell>
+    <Cell><Data ss:Type="String">They like having frank honest discussions about sex.</Data></Cell>
+    <Cell><Data ss:Type="String">With the Periodic Table, each student &quot;becomes&quot; a different Element and present themselves as either individually or as &quot;family&quot; groups.    Some spring projects get started in the fall so the classes have ownership of longer experiments.</Data></Cell>
+    <Cell><Data ss:Type="String">It is important to be able to scaffold your topics in enough ways to draw in all your students. Personally broaden your own interests to love doing this.</Data></Cell>
+    <Cell><Data ss:Type="String">Beverly</Data></Cell>
+    <Cell><Data ss:Type="String">Berndt</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:tygarz7@gmail.com"><Data
+      ss:Type="String">tygarz7@gmail.com</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-20 10:43:02</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">208.54.38.137</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="78.0">
+    <Cell><Data ss:Type="String">3</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">Physics, environmental, nanotechnlology</Data></Cell>
+    <Cell><Data ss:Type="String">Elective</Data></Cell>
+    <Cell><Data ss:Type="String">Illinois</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+    <Cell><Data ss:Type="String">Not good at it</Data></Cell>
+    <Cell><Data ss:Type="String">Vectors</Data></Cell>
+    <Cell><Data ss:Type="String">New concept, two things at once magnitude and direction</Data></Cell>
+    <Cell><Data ss:Type="String">Physics</Data></Cell>
+    <Cell><Data ss:Type="String">Fun and easily inquiry based</Data></Cell>
+    <Cell><Data ss:Type="String">Nano technology</Data></Cell>
+    <Cell><Data ss:Type="String">Newer, </Data></Cell>
+    <Cell><Data ss:Type="String">Inquiry labs</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-20 15:23:58</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">174.251.7.4</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="143.0">
+    <Cell><Data ss:Type="String">4</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">8th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">8.0</Data></Cell>
+    <Cell><Data ss:Type="String">General Science- Earth, Life, and Physical </Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">North Carolina</Data></Cell>
+    <Cell><Data ss:Type="String">Microbiology</Data></Cell>
+    <Cell><Data ss:Type="String">Limited instructional supplies</Data></Cell>
+    <Cell><Data ss:Type="String">Chemistry</Data></Cell>
+    <Cell><Data ss:Type="String">Perhaps weak exposure to the periodic table of elements and lack of  science lab investigations</Data></Cell>
+    <Cell><Data ss:Type="String">Ecosystems</Data></Cell>
+    <Cell><Data ss:Type="String">My school has a created storm water wetland linking to an existing wetland with at least two (2) identified ecosystems.</Data></Cell>
+    <Cell><Data ss:Type="String">Wetlands/Ecosystems</Data></Cell>
+    <Cell><Data ss:Type="String">Wetland Exploratory Teamming</Data></Cell>
+    <Cell><Data ss:Type="String">Virtual Labs</Data></Cell>
+    <Cell><Data ss:Type="String">Not at this time</Data></Cell>
+    <Cell><Data ss:Type="String">Darrell</Data></Cell>
+    <Cell><Data ss:Type="String">Walker</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:dwalker@ecpps.k12.nc.us"><Data
+      ss:Type="String">dwalker@ecpps.k12.nc.us</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-20 18:35:28</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">76.0.138.211</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.0">
+    <Cell><Data ss:Type="String">5</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">8th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">8.0</Data></Cell>
+    <Cell><Data ss:Type="String">Physical Science</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Virginia</Data></Cell>
+    <Cell><Data ss:Type="String">Chemical Bonding</Data></Cell>
+    <Cell><Data ss:Type="String">It's so abstract and finding ways to make it more concrete and explain it on a level that they will understand can just be difficult. </Data></Cell>
+    <Cell><Data ss:Type="String">Newton's Laws of Motion</Data></Cell>
+    <Cell><Data ss:Type="String">There's a lot of math involved and that tends to turn most people off. Students struggle the most with the third law. They get that a force pushes the rocket forward, but the rocket pushing back confuses them because that's not the way it moves. It's a difficult law to understand, but also the math. They REALLY hate the math.</Data></Cell>
+    <Cell><Data ss:Type="String">Forces and Energy</Data></Cell>
+    <Cell><Data ss:Type="String">It's the most concrete and easily applicable to a student's daily life. The students get into playing around with forces and experimenting with causing different energies in substances. </Data></Cell>
+    <Cell><Data ss:Type="String">Chemistry</Data></Cell>
+    <Cell><Data ss:Type="String">They always ask if we can &quot;blow something up?!&quot; Kids love to be entertained and wow'd and explosions definitely are a great way to keep them on the edge of their seat.</Data></Cell>
+    <Cell><Data ss:Type="String">I love to pose problems to the students that I need their help in solving. They love to contribute and by giving them a real problem that affects someone's life, they become more engaged. Any time we can do demonstrations where the kids can be shocked, both literally and figuratively (Hello van de Graaff generator!), they are always more invested. &quot;Why is it doing that?&quot; &quot;How can I do that at home?&quot; It generates questions and discussions and the essential buy-in to learning. </Data></Cell>
+    <Cell><Data ss:Type="String">I post a lot of my lessons to a great website, betterlessons.com, to share and collaborate with other educators around the country. I have found some great activities/ideas that I've been able to tweak and really use in my classroom and keep kids engaged and learning! I'm always looking for ways to inspire kids to continue with the sciences and would love to have my students participate in some actual physical science research opportunities. There are many projects for Earth Science and Biology students to help conduct research, but much fewer on the physics and chemistry end. I think they'd see more importance if they could tie it all together with current, professional research. </Data></Cell>
+    <Cell><Data ss:Type="String">Sarah</Data></Cell>
+    <Cell><Data ss:Type="String">DeWees</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:dewees.sarah@gmail.com"><Data
+      ss:Type="String">dewees.sarah@gmail.com</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-20 19:46:49</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">71.62.59.91</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="52.0">
+    <Cell><Data ss:Type="String">6</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">10.0</Data></Cell>
+    <Cell><Data ss:Type="String">Physics and Mathematics</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Indiana</Data></Cell>
+    <Cell><Data ss:Type="String">no one</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">no one</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">LIGHT- REFLECTION AND REFRACTION</Data></Cell>
+    <Cell><Data ss:Type="String">Because this is the intresting topic</Data></Cell>
+    <Cell><Data ss:Type="String">Light - Reflection and Refraction</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Unique</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Nayeem</Data></Cell>
+    <Cell><Data ss:Type="String">Ahmad</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:nayeemahmad@engineer.com"><Data
+      ss:Type="String">nayeemahmad@engineer.com</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-20 22:06:06</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">70.39.186.205</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.0">
+    <Cell><Data ss:Type="String">7</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">9, 10, 11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">Physics</Data></Cell>
+    <Cell><Data ss:Type="String">Elective</Data></Cell>
+    <Cell><Data ss:Type="String">Missouri</Data></Cell>
+    <Cell><Data ss:Type="String">Fluid Mechanics</Data></Cell>
+    <Cell><Data ss:Type="String">Simply put, this is my first year teaching, so I have a ton to learn. Trying to get the students to understand Bernoulli's Principle using soda cans or running water was a challenge.</Data></Cell>
+    <Cell><Data ss:Type="String">Heat, Thermodynamics</Data></Cell>
+    <Cell><Data ss:Type="String">Even tho' we kept the discussion fairly shallow and did a specific heat capacity lab after the 1st Law introduction, the students bombed the first test. Make-up tests were significantly better, but getting the concepts down - how specific heat works and its real meaning (including unit significance), 1st Law of Thermo interrelationships (Adiabatic, Isothermal, Isovolumetric, Isolated System), and both components of the 2nd Law (Efficiency, Entropy) - took a lot longer than I was expecting.</Data></Cell>
+    <Cell><Data ss:Type="String">Fluid Mechanics, Thermodynamics, Atomic/Subatomic Physics</Data></Cell>
+    <Cell><Data ss:Type="String">I'm a former chemical engineer, so these topics excite me. </Data></Cell>
+    <Cell><Data ss:Type="String">Sound</Data></Cell>
+    <Cell><Data ss:Type="String">Today, in fact, I did a fundamental frequency demo and also used a standing wave generator. My students were completely enthralled with both!</Data></Cell>
+    <Cell><Data ss:Type="String">Work in progress. :)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-21 18:13:37</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">71.91.223.116</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="325.0">
+    <Cell><Data ss:Type="String">8</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">7th</Data></Cell>
+    <Cell><Data ss:Type="String">8th</Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">7, 8, 9, 10, 11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">Environmental and BIological</Data></Cell>
+    <Cell><Data ss:Type="String">Elective</Data></Cell>
+    <Cell><Data ss:Type="String">Alaska</Data></Cell>
+    <Cell><Data ss:Type="String">Climate Change</Data></Cell>
+    <Cell><Data ss:Type="String">Due to the serious debate and politics surrounding the issue most people have false notions. The false notions are extremely hard to prevent as such very little about this issue is discussed in a open manner.</Data></Cell>
+    <Cell><Data ss:Type="String">Resource Management</Data></Cell>
+    <Cell><Data ss:Type="String">This subject is hard to grasp because for so long our culture has been driven to just consume and consume without worrying about how it affects other ecosystems. </Data></Cell>
+    <Cell><Data ss:Type="String">Cell Theory</Data></Cell>
+    <Cell><Data ss:Type="String">Not really.</Data></Cell>
+    <Cell><Data ss:Type="String">Soil analysis</Data></Cell>
+    <Cell><Data ss:Type="String">Is one of the best excuses to get outside during class time.</Data></Cell>
+    <Cell><Data ss:Type="String">Getting the young people outside in the natural world to explain topics and ideas. Being outside fosters learning and is a nice change compared to just sitting in a boring classroom. I try to spend at least a quarter of the class time I have with students in the outdoors.</Data></Cell>
+    <Cell><Data ss:Type="String">Nope</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-22 03:49:40</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">209.193.22.114</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="78.0">
+    <Cell><Data ss:Type="String">9</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">8th</Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">8, 9, 10, 11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">physics</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Alabama</Data></Cell>
+    <Cell><Data ss:Type="String">I teach in the UK. Electric current/electro-magnetism.</Data></Cell>
+    <Cell><Data ss:Type="String">It's hard.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Electrostatics</Data></Cell>
+    <Cell><Data ss:Type="String">Jolly good demos.</Data></Cell>
+    <Cell><Data ss:Type="String">Electrostatics in the early years, particle physics at 11th grade.</Data></Cell>
+    <Cell><Data ss:Type="String">It stretches them...they have to get imaginatively involved.  </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-22 17:51:24</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">212.139.97.251</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="286.0">
+    <Cell><Data ss:Type="String">10</Data></Cell>
+    <Cell><Data ss:Type="String">Kindergarten</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">K</Data></Cell>
+    <Cell><Data ss:Type="String">earth science, mostly; some physics</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Illinois</Data></Cell>
+    <Cell><Data ss:Type="String">sight words</Data></Cell>
+    <Cell><Data ss:Type="String">I don't come up with good practice ideas.</Data></Cell>
+    <Cell><Data ss:Type="String">anything not concrete</Data></Cell>
+    <Cell><Data ss:Type="String">their age</Data></Cell>
+    <Cell><Data ss:Type="String">international cultures</Data></Cell>
+    <Cell><Data ss:Type="String">It's a personal interest, and my students come from all kinds of wonderful international cultures.</Data></Cell>
+    <Cell><Data ss:Type="String">their own bodies</Data></Cell>
+    <Cell><Data ss:Type="String">Your self is always interesting.</Data></Cell>
+    <Cell><Data ss:Type="String">Periodically I have an opportunity to teach about the Golden Mean. (Not with Kindergartners, though.) I teach the derivation, then we use a hands-on approach to explore how it shows up in art, music, architecture, nature, philosophy, etc.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-22 20:16:05</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">71.23.151.241</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.0">
+    <Cell><Data ss:Type="String">11</Data></Cell>
+    <Cell><Data ss:Type="String">Kindergarten</Data></Cell>
+    <Cell><Data ss:Type="String">1st</Data></Cell>
+    <Cell><Data ss:Type="String">2nd</Data></Cell>
+    <Cell><Data ss:Type="String">3rd</Data></Cell>
+    <Cell><Data ss:Type="String">4th</Data></Cell>
+    <Cell><Data ss:Type="String">5th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">K, 1, 2, 3, 4, 5</Data></Cell>
+    <Cell><Data ss:Type="String">All K-5 Science Curriculum while integrating Technology </Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Maryland</Data></Cell>
+    <Cell><Data ss:Type="String">Local environmental impact on watersheds (Chesapeake Bay watershed)</Data></Cell>
+    <Cell><Data ss:Type="String">For some students it is difficult (possibly for developmental reasons) to understand how a raingarden can keep pollutants out of the bay.  We do research, watch videos and use Google Earth to see how our local watershed is connects (and how a raingarden can help prevent pollutants from entering the watershed.)  Students create a hands on simulation in the classroom using spices and small bits of paper to show how grass can filter the water and prevent the sample &quot;objects&quot; from getting in the bay.  Even after all this content knowledge, students still cling onto the somewhat distorted idea that the raingarden will keep TRASH out of the bay.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Lisa </Data></Cell>
+    <Cell><Data ss:Type="String">Wenzel</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:lisa_wenzel@hcpss.org"><Data
+      ss:Type="String">lisa_wenzel@hcpss.org</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 05:52:02</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">24.104.140.36</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="104.0">
+    <Cell><Data ss:Type="String">12</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">9, 10, 11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">Physics</Data></Cell>
+    <Cell><Data ss:Type="String">Elective</Data></Cell>
+    <Cell><Data ss:Type="String">Indiana</Data></Cell>
+    <Cell><Data ss:Type="String">Statics - Force Calculations on Trusses</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Statics - Force Calculations on Trusses</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Kinematics</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Kinematics - Projectile Motion</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Students build a ballistic device to test and understanding Kinematics.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 06:10:14</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">65.214.200.69</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="195.0">
+    <Cell><Data ss:Type="String">13</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">6.0</Data></Cell>
+    <Cell><Data ss:Type="String">Environmental, Physics, Energy</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Maryland</Data></Cell>
+    <Cell><Data ss:Type="String">calculating and graphing speed and acceleration</Data></Cell>
+    <Cell><Data ss:Type="String">students lack number sense, students have trouble memorizing formulas, students have trouble matching what they see on the graph to the motion of an object</Data></Cell>
+    <Cell><Data ss:Type="String">natural selection</Data></Cell>
+    <Cell><Data ss:Type="String">students have not learned about genetics, students cannot grasp all the steps that occur while natural selction is happening</Data></Cell>
+    <Cell><Data ss:Type="String">solar energy</Data></Cell>
+    <Cell><Data ss:Type="String">it is timely and we can do some experiments outside</Data></Cell>
+    <Cell><Data ss:Type="String">animal classification</Data></Cell>
+    <Cell><Data ss:Type="String">they want to dissect things</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 06:13:37</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">71.178.202.79</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="299.0">
+    <Cell><Data ss:Type="String">14</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">5th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">5.0</Data></Cell>
+    <Cell><Data ss:Type="String">general science covering kingdoms, light and sound, oceans, landform, electricity, </Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Virginia</Data></Cell>
+    <Cell><Data ss:Type="String">landform and oceans</Data></Cell>
+    <Cell><Data ss:Type="String">Other than videos, there isn't anything concrete for the kids to get hands-on experience, with the exception of weathering and erosion.</Data></Cell>
+    <Cell><Data ss:Type="String">matter</Data></Cell>
+    <Cell><Data ss:Type="String">Because the particles are so small that they are beyond comprehension.</Data></Cell>
+    <Cell><Data ss:Type="String">kingdoms</Data></Cell>
+    <Cell><Data ss:Type="String">Because we usually think of only animal and plant kingdoms, but there are other very interesting ones.</Data></Cell>
+    <Cell><Data ss:Type="String">kingdoms</Data></Cell>
+    <Cell><Data ss:Type="String">because they get to see animal and plant cells, and also protoctista.</Data></Cell>
+    <Cell><Data ss:Type="String">I use apple cider to demonstrate how the states of matter change.  Make ice cream to demonstrate changing freezing temperature.  Grow white carnations from seeds to teach seeds, plants, flowering, composting, and vascular system.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Laura </Data></Cell>
+    <Cell><Data ss:Type="String">Yang</Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:llyang@fcps.edu"><Data ss:Type="String">llyang@fcps.edu</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 06:32:46</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">71.241.236.120</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="78.0">
+    <Cell><Data ss:Type="String">15</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">9th</Data></Cell>
+    <Cell><Data ss:Type="String">10th</Data></Cell>
+    <Cell><Data ss:Type="String">11th</Data></Cell>
+    <Cell><Data ss:Type="String">9, 10, 11, 12</Data></Cell>
+    <Cell><Data ss:Type="String">Computer Science</Data></Cell>
+    <Cell><Data ss:Type="String">Elective</Data></Cell>
+    <Cell><Data ss:Type="String">Virginia</Data></Cell>
+    <Cell><Data ss:Type="String">Data</Data></Cell>
+    <Cell><Data ss:Type="String">Hard to come up with engaging examples</Data></Cell>
+    <Cell><Data ss:Type="String">Data Structures</Data></Cell>
+    <Cell><Data ss:Type="String">It is a very abstract concept and it is hard for students to visualize</Data></Cell>
+    <Cell><Data ss:Type="String">algorithms</Data></Cell>
+    <Cell><Data ss:Type="String">computer science is used in every aspect of our lives</Data></Cell>
+    <Cell><Data ss:Type="String">Media - pictures, sound etc</Data></Cell>
+    <Cell><Data ss:Type="String">intantly engaging</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Rebecca </Data></Cell>
+    <Cell><Data ss:Type="String">Dovi </Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:rdovi@hcps.us"><Data ss:Type="String">rdovi@hcps.us</Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 08:12:36</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">72.236.144.14</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.0">
+    <Cell><Data ss:Type="String">16</Data></Cell>
+    <Cell><Data ss:Type="String">Kindergarten</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2nd</Data></Cell>
+    <Cell><Data ss:Type="String">3rd</Data></Cell>
+    <Cell><Data ss:Type="String">4th</Data></Cell>
+    <Cell><Data ss:Type="String">5th</Data></Cell>
+    <Cell><Data ss:Type="String">6th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">K, 2, 3, 4, 5, 6</Data></Cell>
+    <Cell><Data ss:Type="String">LIBRARY MEDIA - integrate STEM, other subjects </Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Maryland</Data></Cell>
+    <Cell><Data ss:Type="String">STEM</Data></Cell>
+    <Cell><Data ss:Type="String">Not my educational background.</Data></Cell>
+    <Cell><Data ss:Type="String">STEM</Data></Cell>
+    <Cell><Data ss:Type="String">Students have a fear that they won't be able to comprehend these technical subjects. Or they have not been well prepared to go further in these subjects.</Data></Cell>
+    <Cell><Data ss:Type="String">MEDIA</Data></Cell>
+    <Cell><Data ss:Type="String">I get to take all the subjects and make them come alive using technology.</Data></Cell>
+    <Cell><Data ss:Type="String">Almost anything interactive</Data></Cell>
+    <Cell><Data ss:Type="String">When they are in front of the computers, they have laser focus.</Data></Cell>
+    <Cell><Data ss:Type="String">As an example, I had my 4th-6th grade media classes enter the If I Were Mayor essay contest (to get keyboarding practice) as part of an ongoing technology-based project. When they return from spring break, they will begin simulating how to build their own city using the Future City program. And for Career Day, I have invited the mayor to speak to the 4th-6th grade classes. </Data></Cell>
+    <Cell><Data ss:Type="String">The principal at my school has a plan to better integrate STEM subjects using the media center and has budgeted to make the media specialist position full-time next year.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-26 08:41:19</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">66.250.190.32</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="409.0">
+    <Cell><Data ss:Type="String">17</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6th</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="Number">6.0</Data></Cell>
+    <Cell><Data ss:Type="String">general</Data></Cell>
+    <Cell><Data ss:Type="String">Required</Data></Cell>
+    <Cell><Data ss:Type="String">Illinois</Data></Cell>
+    <Cell><Data ss:Type="String">electricity and magnetism</Data></Cell>
+    <Cell><Data ss:Type="String">these are topics that were never clearly taught to me</Data></Cell>
+    <Cell><Data ss:Type="String">layers of atmosphere</Data></Cell>
+    <Cell><Data ss:Type="String">diagrams don't always help students understand scale of atmosphere, composition of gases in each layer, activities in and importance of each layer.  </Data></Cell>
+    <Cell><Data ss:Type="String">astronomy</Data></Cell>
+    <Cell><Data ss:Type="String">so many things to learn about, astronomy describes the vastness of our universe and the mind boggling concepts of space and time and &quot;what's out there&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">chemical reactions</Data></Cell>
+    <Cell><Data ss:Type="String">anything that bubbles or fizzes or changes color is perceived as fun.  The concepts of atoms and chemical bonding is a challenge for them, though</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">If you are interested in helping students grasp concepts, you also need to make the materials easy for their teachers to learn too.  Sadly, many elementary students do NOT get any designated time in their day for science.  When the students come to middle school level science classes, they have little or no background in basic concepts because the lower grades have focused on reading skills and math skills for standardized testing needs.  </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s23" ss:HRef="mailto:"><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2013-03-27 08:47:48</Data></Cell>
+    <Cell><Data ss:Type="String">public</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">99.142.10.236</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Zoom>200</Zoom>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <LeftColumnVisible>16</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>17</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
