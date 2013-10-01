@@ -1,0 +1,434 @@
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Abel', sans-serif;
+*/
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf");
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url("fonts/Abel/Abel-Regular.ttf");
+}
+  
+body, article, section, div, p{
+	margin: 0px;
+	padding:0px;
+}
+
+a, a:hover, a:active, a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+button{
+	z-index: 2000;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin: 5px;
+	padding-top: 3px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+	cursor: hand;
+	cursor: pointer;
+}
+
+button:active{
+	background: #2D2D2D;
+}
+
+section{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+section img{
+	width: 100%;
+}
+
+article{
+	position: absolute;
+}
+
+#screen{
+	width: 100%;
+	height: 100%;
+}
+
+#level{
+	width: 10%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	position: absolute;	
+}
+
+/*
+#levelArrows{
+	width: 1.5%;
+	height: 100%;
+	top: 0;
+	left: 10%;
+	position: absolute;	
+}
+*/
+
+
+#collection{
+    width:90%;
+    bottom:0;
+	left:10%;
+	border-top: solid rgba(0,0,0,0.65) 1px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position:absolute;	
+
+}
+
+#collection button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1{
+	font-family: 'Abel', sans-serif;
+	font-size: 2em;
+	background: #2D2D2D;
+	padding: 1%;
+	color: white;
+	margin: 0;
+	font-weight: 300;
+}
+
+h2{
+	font-family: 'Abel', sans-serif;
+	font-size: 1.2vw;
+	background: #2D2D2D;
+	padding: 4%;
+	color: white;
+	margin-top: 0;
+	font-weight: 300;
+}
+
+h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+	color: white;
+	margin: 0;
+	font-size: 1.4em;
+}
+
+#levelTitleHolder{
+	width: 99%;
+	background-color: #5CA47E;
+	padding: 5px;
+	border-radius: 2px 2px 0px 0px;
+}
+
+#level img{
+	width: 80%;
+	padding:6% 10% 6% 10%;
+	margin-bottom: 3vh;
+	z-index: 2;
+	position: relative;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#levelHilighter{
+	width: 100%;
+	height: 8vw;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	z-index: 0;
+	
+}
+
+#discription{
+	font-family: 'Abel', sans-serif;
+	font-size: .8em;
+	background-color: rgba(45, 45, 45, .1);
+	width: 100%;
+	padding: 4 0 4 0;
+	position: absolute;
+}
+
+#link{
+	color: black;
+	font-family: 'Abel', sans-serif;
+	font-size: .9em;
+	padding: 25px;
+	border: #DBDBDB solid 1px;
+	width: 170px;
+}
+
+#link:hover{
+	border: #A7A9AC solid 1px;
+	background-color: #E6E7E8;
+}
+
+#link:active{
+	border: #808285 solid 1px;
+	background-color: #D1D3D4;
+}
+
+#subatomicLevelInfo{
+	width: 88%;
+	height: 90%;
+	background: white;
+	border: solid 2px rgba(0,0,0,0.6);
+	position: absolute;
+	top: 1.5%;
+	left: 11%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.hotSpot{
+	position: absolute;
+	width: 20px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#hotSpot1{
+	top: 42%;
+	left: 71%;	
+}
+
+#hotSpot2{
+	top: 70%;
+	left: 20%;
+}
+
+.info{
+	position:absolute;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	top:0;
+	font-size: .8em;
+	width: 30%;
+	color: white;
+	background-color: #2D2D2D;
+	border-radius: 5px;
+	padding: 7px 5px 7px 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+.hotSpotInfo{
+	position:absolute;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	top:0;
+	font-size: .8em;
+	width: 30%;
+	color: #2D2D2D;
+	background-color: white;
+	border: solid 2px #E8035B;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+.hotSpotInfo img{
+	width: 100%;
+}
+
+.hotSpotInfo p{
+	margin-bottom: 7px;
+}
+
+#baseballInfo{
+	top: 13%;
+	left: 1%;
+}
+
+#stadiumInfo{
+	top: 46%;
+	left: 57%;
+}
+
+#electricChargeInfo{
+	top: 368px;
+	left: 30%;
+}
+
+#fusionForceInfo{
+	top: 264px;
+	left: 13%;
+}
+#neutronInfo{
+	top: 184px;
+	left: 57%;
+}
+#protonInfo{
+	top: 288px;
+	left: 55%;
+}
+#electronInfo{
+	top: 258px;
+	left: 64%;
+}
+
+#blocker{
+	width: 88%;
+	height: 90%;
+	background: rgba(0,0,0,0.67);
+	position: absolute;
+	top: 1.5%;
+	left: 11%;
+	border-radius: 5px;
+}
+
+
+button.subatomic{
+	background: #5ca47e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5ca47e 0%, #82c0a5 60%, #5ca47e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ca47e), color-stop(60%,#82c0a5), color-stop(100%,#5ca47e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5ca47e 0%,#82c0a5 60%,#5ca47e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5ca47e 0%,#82c0a5 60%,#5ca47e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5ca47e 0%,#82c0a5 60%,#5ca47e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5ca47e 0%,#82c0a5 60%,#5ca47e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ca47e', endColorstr='#5ca47e',GradientType=0 ); /* IE6-9 */
+}
+
+button.subatomic:hover{
+	background: #82c0a5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #82c0a5 0%, #5ca47e 60%, #82c0a5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82c0a5), color-stop(60%,#5ca47e), color-stop(100%,#82c0a5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #82c0a5 0%,#5ca47e 60%,#82c0a5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #82c0a5 0%,#5ca47e 60%,#82c0a5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #82c0a5 0%,#5ca47e 60%,#82c0a5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #82c0a5 0%,#5ca47e 60%,#82c0a5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c0a5', endColorstr='#82c0a5',GradientType=0 ); /* IE6-9 */
+
+}
+
+button.atomic{
+background: #0497d2; /* Old browsers */
+background: -moz-linear-gradient(top,  #0497d2 0%, #02b5e6 60%, #0497d2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0497d2), color-stop(60%,#02b5e6), color-stop(100%,#0497d2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0497d2 0%,#02b5e6 60%,#0497d2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0497d2 0%,#02b5e6 60%,#0497d2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0497d2 0%,#02b5e6 60%,#0497d2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0497d2 0%,#02b5e6 60%,#0497d2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0497d2', endColorstr='#0497d2',GradientType=0 ); /* IE6-9 */
+
+}
+
+button.atomic:hover{
+background: #02b5e6; /* Old browsers */
+background: -moz-linear-gradient(top,  #02b5e6 0%, #0497d2 60%, #02b5e6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02b5e6), color-stop(60%,#0497d2), color-stop(100%,#02b5e6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #02b5e6 0%,#0497d2 60%,#02b5e6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #02b5e6 0%,#0497d2 60%,#02b5e6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #02b5e6 0%,#0497d2 60%,#02b5e6 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #02b5e6 0%,#0497d2 60%,#02b5e6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5e6', endColorstr='#02b5e6',GradientType=0 ); /* IE6-9 */
+
+}
+
+/*
+map area{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+#electricChargeWord{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+#electricChargeWord:hover{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+area{
+	cursor: pointer; 
+	cursor: hand;
+}
+
+area:hover{
+	cursor: pointer; 
+	cursor: hand;
+}
+*/
+
+
+
+
+/*
+#proton, #neutron, #electron, #electricCharge, #fusionForce, .proton, .neutron, .electron, .electricCharge, .fusionForce{
+	position: absolute;
+}
+*/
+
+
+/*
+#mouseImage{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+#mouseImage img{
+	width: 100%;
+}
+*/
+
+
+/*
+
+
+#proton, #neutron, #electron, #electricCharge, #fusionForce{
+	z-index: 2000;
+}
+
+.proton, #proton{
+	background: turquoise; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.neutron, #neutron{
+	background: coral; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%;
+}
+
+.electron, #electron{
+	background: #00a3ff; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%;
+}
+
+.electricCharge, #electricCharge{
+	border: dotted red 3px;
+	width: 50px; 
+	height: 50px; 
+	border-radius: 50%;
+}
+
+.fusionForce, #fusionForce{
+	border: solid 4px rgba(255,86,0,1);
+	width: 60px; 
+	height: 60px; 
+	border-radius: 50%;
+}
+*/
+
